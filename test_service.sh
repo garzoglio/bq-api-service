@@ -1,7 +1,5 @@
 # Set the variables for your service
-SERVICE_NAME="bq-api-service"
-REGION="us-central1"
-PROJECT_ID="test-project-26133-466015"
+. .env
 
 # 1. Get the URL of your deployed Cloud Run service
 SERVICE_URL=$(gcloud run services describe "$SERVICE_NAME" --region="$REGION" --project="$PROJECT_ID" --format='value(status.url)')
