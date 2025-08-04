@@ -64,4 +64,4 @@ local-run:
     docker build -t {{SERVICE_NAME}} .
     docker run --rm -p 8080:8080 \
       -e GOOGLE_CLOUD_PROJECT={{PROJECT_ID}} \
-      --name bq-api {{SERVICE_NAME}}
+      --name bq-api {{SERVICE_NAME
